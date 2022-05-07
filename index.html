@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Racing Sans One"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><span>Prahar</span>Racing</div>
+      <div class="hamburger" id="hamburger"  onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <ul class="navs" id="navs">
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Team</a></li>
+        <li><a href="">Gallery</a></li>
+      </ul>
+    </nav>
+    <section class="container">
+      <h1>Welcome To Prahar Racing</h1>
+      <a href="">Discover</a>
+    </section>
+  </body>
+  <script>
+    function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navs = document.getElementById("navs");
+
+    hamburger.addEventListener("click", () => {
+      navs.classList.toggle("show");
+    });
+  </script>
+</html>
